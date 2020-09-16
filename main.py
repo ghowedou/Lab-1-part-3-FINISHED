@@ -38,7 +38,7 @@ total = endtime - starttime
 print('Total time:', total,'secs')
 
 speedup = 117.60126638412476 - total
-print('The process is sped up:',speedup,'secs')
+print('The process is sped up:',speedup,'seconds')
 
 plt.scatter(x_coordinates, y_coordinates)
 plt.show()
