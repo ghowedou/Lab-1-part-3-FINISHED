@@ -21,7 +21,7 @@ def collatz(x):
 
 x_coordinates = []
 y_coordinates = []
-for i in range(1, 1000001):
+for i in range(1, 101):
     x = math.log(i,10)
     x_coordinates.append(i)
     y = collatz(i)
@@ -36,6 +36,9 @@ endtime = time.time() #dont want computation time to include plotting
 
 total = endtime - starttime
 print('Total time:', total,'secs')
+
+speedup = 117.60126638412476 - total
+print('The process is sped up:',speedup,'secs')
 
 plt.scatter(x_coordinates, y_coordinates)
 plt.show()
